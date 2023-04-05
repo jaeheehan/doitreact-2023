@@ -17,7 +17,12 @@ export default function ValidatableInputTest() {
     return  (
         <section className="mt-4">
             <Title>ValidatableInputTest</Title>
-            <div className="flex justify-center mt-4"></div>
+            <div className="flex justify-center mt-4">
+                <div className="flex flex-col w-1/3 p-2">
+                    <ValidatableInput type="email" ref={methodsRef} className="input-primary"></ValidatableInput>
+                    <button onClick={validateEmail} className="mt-4 btn btn-primary"/>
+                </div>
+            </div>
         </section>
     )
 }
